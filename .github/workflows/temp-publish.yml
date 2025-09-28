@@ -18,6 +18,10 @@ jobs:
         pip install setuptools wheel twine
     - name: Build package
       run: python setup.py sdist bdist_wheel
-    - name: Publish to PyPI with password
+    - name: List built files
+      run: ls -la dist/
+    - name: Publish to PyPI with API Token
       run: |
-        twine upload dist/* -u muselium -p "${{ secrets.PYPI_PASSWORD }}"
+        twine upload dist/* --verbose --username __token__ --password $PYPI_TOKEN
+      env:
+        PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
