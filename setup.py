@@ -7,7 +7,7 @@ setup(
     name="SoullessAi-Dem",
     version="1.0.0",
     author="ceylon",
-    author_email="Отсутствует",
+    author_email="ceylon1cy@gmail.com",
     description="Библиотека для генерации демотиваторов",
     long_description="Библиотека от создателей Soulless Materia для генерации демотиваторов. Совместима с aiogram, telebot и другими библиотеками для Telegram, а также с библиотеками для ВКонтакте.",
     long_description_content_type="text/markdown",
