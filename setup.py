@@ -21,8 +21,6 @@ setup(
     },
     install_requires=[
         "Pillow>=8.0.0",
-        "webptools>=0.1.0",
-        "moviepy>=1.0.0",
     ],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
