@@ -1,19 +1,18 @@
 from setuptools import setup, find_packages
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
-
 setup(
     name="SoullessAi-Dem",
     version="1.0.9",
-    author="ceylon",
+    author="ceylon1cy",
     author_email="ceylon1cy@gmail.com",
-    description="Библиотека для генерации демотиваторов",
-    long_description="Библиотека от создателей Soulless Materia для генерации демотиваторов. Совместима с aiogram, telebot и другими библиотеками для Telegram, а также с библиотеками для ВКонтакте.",
+    description="Библиотека для создания демотиваторов",
+    long_description="Библиотека для создания демотиваторов. Совместима с aiogram, telebot и другими библиотеками для Telegram ботов, а также с библиотеками для ВКонтакте.",
     long_description_content_type="text/markdown",
-    packages=find_packages(),
+    packages=find_packages(include=['soulless_ai_dem', 'soulless_ai_dem.*']),
+    include_package_data=True,
     package_data={
         'soulless_ai_dem': [
+            '*.py',
             'fonts/*.ttf',
             'templates/*.png',
             'templates/*.jpg'
@@ -35,4 +34,5 @@ setup(
         "Programming Language :: Python :: 3.10",
     ],
     python_requires=">=3.6",
+)    python_requires=">=3.6",
 )
