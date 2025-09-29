@@ -3,7 +3,7 @@ import os
 
 setup(
     name="SoullessAi-Dem",
-    version="1.1.2",
+    version="1.1.3",
     author="ceylon1cy",
     author_email="ceylon1cy@gmail.com",
     description="Библиотека для создания демотиваторов",
@@ -32,4 +32,4 @@ setup(
     ],
     python_requires=">=3.7",
     keywords="demotivator, image processing, meme",
-))
+)
