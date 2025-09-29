@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="SoullessAi-Dem",
-    version="1.0.9.2",
+    version="1.0.9.3",
     author="ceylon1cy",
     author_email="ceylon1cy@gmail.com",
     description="Библиотека для создания демотиваторов",
@@ -34,5 +34,4 @@ setup(
         "Programming Language :: Python :: 3.10",
     ],
     python_requires=">=3.6",
-)    python_requires=">=3.6",
 )
