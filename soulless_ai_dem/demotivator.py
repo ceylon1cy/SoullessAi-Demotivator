@@ -168,11 +168,18 @@ def create_demotivator(input_path, output_path, text_lines=None, small=False):
     
     back = Image.open(back_path)
     
+    if back.mode == 'RGBA':
+        back = back.convert('RGB')
+    
     if input_path:
         im = Image.open(input_path)
         newx = 608
         newy = 566
         im = im.resize((newx, newy), Image.LANCZOS)
+        
+        if im.mode == 'RGBA':
+            im = im.convert('RGB')
+            
         back.paste(im, (55, 33))
     
     draw = ImageDraw.Draw(back)
@@ -205,5 +212,8 @@ def create_demotivator(input_path, output_path, text_lines=None, small=False):
     
     if small:
         back = back.resize((357, 372), Image.LANCZOS)
+    
+    if back.mode != 'RGB':
+        back = back.convert('RGB')
     
     back.save(output_path)

@@ -3,9 +3,9 @@ import os
 
 setup(
     name="SoullessAi-Dem",
-    version="1.1.4.3",
+    version="1.1.4.4",
     author="ceylon1cy",
-    author_email="ceylon1cy@gmail.com",
+    author_email="ceylon1cy@xyecoc.com",
     description="Библиотека для создания демотиваторов",
     long_description="Библиотека для создания демотиваторов. Совместима с aiogram, telebot и другими библиотеками для Telegram, также совместима с ВКонтакте.",
     long_description_content_type="text/markdown",
