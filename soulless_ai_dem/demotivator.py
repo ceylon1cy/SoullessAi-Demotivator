@@ -124,13 +124,6 @@ def get_random_text():
     return all_txt[random.randrange(len(all_txt))]
 
 def create_demotivator(input_path, output_path, text_lines=None, small=False):
-"""
-Аргументы:
-input_path (str): Путь к исходному изображению
-output_path (str): Путь для сохранения результата
-text_lines (list): Список строк текста (максимум 3 строки)
-small (bool): Уменьшенный формат (предназначено для групп)
-"""
     
     package_dir = os.path.dirname(os.path.abspath(__file__))
     
