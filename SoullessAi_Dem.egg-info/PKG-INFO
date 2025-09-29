@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: SoullessAi-Dem
+Version: 1.0.4
+Summary: Библиотека для генерации демотиваторов
+Author: ceylon
+Author-email: ceylon1cy@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow>=8.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Библиотека от создателей Soulless Materia для генерации демотиваторов. Совместима с aiogram, telebot и другими библиотеками для Telegram, а также с библиотеками для ВКонтакте.
