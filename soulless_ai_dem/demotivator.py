@@ -183,11 +183,15 @@ def create_demotivator(input_path, output_path, text_lines=None, small=False):
         if not t or pos > 1:
             continue
         
-        w, h = draw.textsize(t, font=unicode_font[sz])
+        bbox = draw.textbbox((0, 0), t, font=unicode_font[sz])
+        w = bbox[2] - bbox[0]
+        h = bbox[3] - bbox[1]
         
         while w > 714 and sz < 3:
             sz += 1
-            w, h = draw.textsize(t, font=unicode_font[sz])
+            bbox = draw.textbbox((0, 0), t, font=unicode_font[sz])
+            w = bbox[2] - bbox[0]
+            h = bbox[3] - bbox[1]
         
         draw.text((714/2 - w/2, 700 - h/2 + (-rows/2 + pos) * 58), 
                  t, font=unicode_font[sz], fill="white")
