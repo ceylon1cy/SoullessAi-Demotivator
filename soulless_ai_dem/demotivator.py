@@ -172,7 +172,7 @@ def create_demotivator(input_path, output_path, text_lines=None, small=False):
         im = Image.open(input_path)
         newx = 608
         newy = 566
-        im = im.resize((newx, newy), Image.ANTIALIAS)
+        im = im.resize((newx, newy), Image.LANCZOS)
         back.paste(im, (55, 33))
     
     draw = ImageDraw.Draw(back)
@@ -200,6 +200,6 @@ def create_demotivator(input_path, output_path, text_lines=None, small=False):
             pos += 1
     
     if small:
-        back = back.resize((357, 372), Image.ANTIALIAS)
+        back = back.resize((357, 372), Image.LANCZOS)
     
     back.save(output_path)
