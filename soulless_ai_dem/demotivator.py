@@ -149,7 +149,7 @@ def create_demotivator(input_path, output_path, text_lines=None, small=False):
     if text_lines is None:
         back_path = os.path.join(package_dir, "templates/base.png")
     else:
-        back_path = os.path.join(package_dir, "templates/base_r.png")
+        back_path = os.path.join(package_dir, "templates/base_r.jpg")
     
     back = Image.open(back_path)
     
